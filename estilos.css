@@ -9,7 +9,7 @@ body{
     font-family: 'Varela Round', sans-serif;
     font-size: 15px;
     color: rgb(0, 0, 0);
-    min-width: 320px;
+    min-width: 280px;
 }
 
 /**************   HEADER__MENU   **************/
@@ -261,7 +261,7 @@ main a:hover{
 }
 
 .picture_ img{
-    width: 40%;
+    width: 70%;
     border-radius: 10px;
     margin: 20px;
 }
@@ -304,12 +304,10 @@ footer{
 }
 .ic_linkkers img{
     height: 40px;
-    margin: 5px 25px;
+    margin: 15px;
     transition: .3s all linear;
 }
 .ic_linkkers img:hover{
-    height: 40px;
-    margin: 5px 25px;
     transform: rotate(1turn);
 }
 .fn_enlaces{
@@ -322,7 +320,7 @@ footer{
 .fn_enlaces ul li{
     line-height: 25px;
     list-style: none;
-    margin: 10px;
+    margin: 1px;
 }
 .fn_enlaces ul li a{
     color: white;
@@ -355,8 +353,83 @@ footer{
 
   
 /**************** MEDIA QUERY ****************/
+@media (min-width: 295px) and (max-width: 430px){
 
-@media (min-width: 200px) and (max-width: 600px){
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-icon img{
+        height: 40px;
+        margin: 10px;
+    }
+    .header{
+        height: auto;
+    }
+    .navigation {
+        width: 80%;
+        margin: auto;
+        margin-top: .3rem;
+        background: rgba(173, 29, 29, 0);
+        clear: "";
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li{
+        display: block;
+    }
+.navigation ul li a{
+    width: auto;
+    height: 100%;
+    display: block;
+    transition: .3s all linear;
+    text-align: center;
+}
+.navigation ul li a:hover{
+    color: red;
+    background: rgb(255, 255, 255);
+}
+section{
+    height: auto;
+    flex-direction: column;
+}
+aside{
+    width: 100%;
+    margin: 30px auto;
+}
+article{
+    width: 100%;
+    margin: 30px auto;
+}
+
+.ic_linkkers img{
+    height: 30px;
+    margin: 8px;
+}
+.disappear{
+    display: none;
+}
+
+.fn_enlaces ul{
+    margin: 10px;
+}
+.fn_enlaces ul li{
+    line-height: 30px;
+}
+.fn_enlaces ul li a{
+    font-size: .8rem;
+}
+.picture_ img{
+    width: 90%;
+}
+
+}
+
+@media (min-width: 431px) and (max-width: 600px){
 
     .menu-icon{
         display: block;
@@ -408,13 +481,19 @@ footer{
         width: 100%;
         margin: 30px auto;
     }
-    
     .ic_linkkers img{
         height: 30px;
-        margin: 5px;
+        margin: 15px;
     }
     .disappear{
         display: none;
     }
-
+    .picture_ img{
+        width: 90%;
+    }
+    
 }
+
+
+
+
