@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    min-width: 320px;
+}
+
+/**************   HEADER__MENU   **************/
+header{
+    height: auto;
+    background: linear-gradient(90deg, rgba(55,54,114,1) 0%, rgba(55,54,114,1) 16%, rgba(178,34,52,1) 100%);
+    background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/25/124171-stripes-red-white.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: relative;
+    z-index: 1;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+}
+.menu-icon{
+    display: none;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+}
+.navigation ul li a:hover{
+    color: rgb(226, 226, 226);
+    border-bottom: 2px solid white;
+}
+
+
+/*************** SLIDER *********************/
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    width: 100%;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    font-size: 3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+.slide.current {
+    opacity: 1;
+}
+.buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+}
+.buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+}
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Backgorund Images */
+   
+  .slide:first-child {
+    background: url('https://misitioweb.com.mx/wp-content/uploads/2020/12/background-msweb-01-.png') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(2) {
+    background: url('https://castelloncreativa.com/wp-content/uploads/2020/02/Pinterest-Cover-De-Post-Del-Blog-Web-Design-Trends-1280x720px.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(3) {
+    background: url('img/diseno_3.jpg') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(4) {
+    background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
+      center top/cover;
+  }
+  .slide:nth-child(5) {
+    background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
+      center top/cover;
+  } 
+  .slide:nth-child(6)  {
+    background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
+      center center/cover;
+  }
+
+/**************** SECTION ****************/
+section{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+}
+aside{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+aside h2{
+    font-size: 2rem;
+    margin: 20px;
+    color: rgb(95, 95, 95);
+}
+
+aside p{
+    width: 80%;
+    margin: 20px;
+    text-align: justify;
+    color: rgb(95, 95, 95);
+}
+aside a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: .2s all linear;
+}
+aside a:hover{
+    background: rgb(0, 110, 255);
+    color: rgb(255, 215, 215);
+    border-radius: 6px;
+    
+}
+
+article{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+article img{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+
+/**************** MAIN ****************/
+main{
+    width: 100%;
+    height: auto;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+main h2{
+    color: yellow;
+    font-size: 2rem;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+main img{
+    width: 90%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+main p{
+    text-align: center;
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+
+main a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: .2s all linear;
+    margin-bottom: 50px;
+}
+main a:hover{
+    background: rgb(0, 110, 255);
+    color: rgb(255, 215, 215);
+    border-radius: 6px;
+}
+/**************** PICTURE ****************/
+
+.picture_{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.picture_ h2{
+    color: rgb(99, 99, 99);
+    font-size: 2rem;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.picture_ img{
+    width: 40%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.picture_ p{
+    text-align: center;
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: justify;
+    color: rgb(95, 95, 95);
+}
+
+.picture_ a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: .2s all linear;
+    margin-bottom: 50px;
+}
+.picture_ a:hover{
+    background: rgb(0, 110, 255);
+    color: rgb(255, 215, 215);
+    border-radius: 6px;
+}
+
+
+
+  
+/**************** FOOTER ****************/
+footer{
+    width: 100%;
+    height: 300px;
+    background: rgb(197, 0, 0);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.ic_linkkers img{
+    height: 40px;
+    margin: 5px 25px;
+    transition: .3s all linear;
+}
+.ic_linkkers img:hover{
+    height: 40px;
+    margin: 5px 25px;
+    transform: rotate(1turn);
+}
+.fn_enlaces{
+    display: flex;
+    flex-flow: row wrap;
+}
+.fn_enlaces ul{
+    margin: 20px;
+}
+.fn_enlaces ul li{
+    line-height: 25px;
+    list-style: none;
+    margin: 10px;
+}
+.fn_enlaces ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .2s all linear;
+    font-size: .9rem;
+}
+.fn_enlaces ul li a:hover{
+    color: rgb(0, 247, 255);
+}
+
+.black_line{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-size: .8rem;
+    padding: 20px;
+}
+.black_line a{
+    color: white;
+    text-decoration: none;
+}
+.black_line a:hover{
+    color: rgb(255, 0, 21);
+}
+
+
+  
+/**************** MEDIA QUERY ****************/
+
+@media (min-width: 200px) and (max-width: 600px){
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-icon img{
+        height: 40px;
+        margin: 10px;
+    }
+    .header{
+        height: auto;
+    }
+    .navigation {
+        width: 80%;
+        margin: auto;
+        margin-top: .3rem;
+        background: rgba(173, 29, 29, 0);
+        clear: "";
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        width: auto;
+        height: 100%;
+        display: block;
+        transition: .3s all linear;
+        text-align: center;
+    }
+    .navigation ul li a:hover{
+        color: red;
+        background: rgb(255, 255, 255);
+    }
+    section{
+        height: auto;
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        margin: 30px auto;
+    }
+    article{
+        width: 100%;
+        margin: 30px auto;
+    }
+    
+    .ic_linkkers img{
+        height: 30px;
+        margin: 5px;
+    }
+    .disappear{
+        display: none;
+    }
+
+}
