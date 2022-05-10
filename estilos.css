@@ -11,6 +11,24 @@ body{
     color: rgb(0, 0, 0);
     min-width: 280px;
 }
+/**************   ANIMACIONES   **************/
+.animado{
+    opacity: 0;
+    transition: all .5s;
+}
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+
+    }
+}
 
 /**************   HEADER__MENU   **************/
 header{

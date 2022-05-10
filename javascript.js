@@ -1,3 +1,5 @@
+/********************* MENU CON SUBMENU *********************/
+
 jQuery('document').ready(function($){
 
     var menuBtn = $('.menu-icon'),
@@ -13,6 +15,8 @@ jQuery('document').ready(function($){
         });
 });
 
+
+/********************* SLIDER *********************/
 
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
@@ -75,4 +79,22 @@ if (auto) {
   // Run next slide at interval time
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+
+/********************* SCROLL ANIMADO *********************/
+let animado = document.querySelectorAll(".animado");
+
+function mostrarScroll (){
+  let scrollTop = document.documentElement.scrollTop;
+  for (var i = 0; i < animado.length; i++){
+    let alturaAnimado = animado[i].offsetTop;
+    if(alturaAnimado - 250 < scrollTop){
+      animado[i].style.opacity = 1;
+      animado[i].classList.add("mostrarArriba");
+    }
+  }
+}
+window.addEventListener('scroll', mostrarScroll)
+
+
+
 
